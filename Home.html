@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AniX</title>
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="pleer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  
+
+
+
+
+
+
+   <style>
+    body{
+      background: rgb(40, 40, 40);
+    }
+    
+    .card {
+      width: 200px;
+      /* border: 1px solid #ccc; */
+      border-radius: 8px;
+      padding: 10px;
+      /* background-color: #f9f9f9; */
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <!-- голова -->
+<header>
+  <div class="logo">
+      <a href="Home.html">
+      <img src="../images/AniX-logo.png" alt="AniX" style="height: 50px;">
+    </a>
+  </div>
+
+   <nav>
+      <!-- <a href="#">Обо мне</a> -->
+  </nav>
+
+
+
+<!-- test -->
+
+
+
+
+
+
+
+
+
+
+<div class="search-container">
+  <div class="search-wrapper">
+    <input type="text" id="searchInput" placeholder="Поиск аниме..." autocomplete="off" />
+  </div>
+</div>
+
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.anime-card');
+    const noResults = document.getElementById('noResults');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      let anyVisible = false;
+
+      cards.forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        const visible = title.includes(query);
+        card.style.display = visible ? 'block' : 'none';
+        if (visible) anyVisible = true;
+      });
+
+      noResults.style.display = anyVisible ? 'none' : 'block';
+    });
+  });
+</script>
+
+
+<style>
+  body{
+    .search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#searchInput:focus {
+  border-color: #4e89ff;
+  box-shadow: 0 0 0 2px rgba(78, 137, 255, 0.2);
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 15px;
+}
+
+  }
+</style>
+</div>
+
+<!-- <p id="noResults" style="display: none;">Ничего не найдено</p> -->
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  <section class="card-section-home">
+
+    <div class="anime-card" data-title="Клинок рассекающих демонов">
+      <a href="./DemonSlayer/1s.html">
+        <img src="/images/Demon-Slayer(2).jpg" alt="Клинок рассекающих демонов" class="anime-image">
+      </a>
+      <div class="anime-content">
+        <a href="./DemonSlayer/1s.html">
+          <h3 class="anime-title">Клинок рассекающих демонов</h3>
+        </a>
+        <p class="anime-genre">Экшен • Драма • Фэнтези</p>
+      </div>
+    </div>
+
+   
+     <div class="anime-card" data-title="Атака титанов">
+      <a href="pleer2.html">
+        <img src="../images/attack-on-titan-upgraded(2).jpg" alt="Атака титанов" class="anime-image">
+      </a>
+      <div class="anime-content">
+        <a href="pleer2.html">
+          <h3 class="anime-title">Атака титанов</h3>
+        </a>
+        <p class="anime-genre">Экшен • Ужасы • Драма</p>
+      </div>
+    </div>
+
+    <div class="anime-card" data-title="Токийский Гуль">
+      <a href="pleer3.html">
+        <img src="../images/tokio-ghoul (1) (1).jpg" alt="Токийский Гуль" class="anime-image">
+      </a>
+      <div class="anime-content">
+        <a href="pleer3.html">
+          <h3 class="anime-title">Токийский Гуль</h3>
+        </a>
+        <p class="anime-genre">Ужасы • Экшен • Психология</p>
+      </div>
+    </div>
+
+
+     <div class="anime-card" data-title="Ван пачмен">
+      <a href="pleer3.html">
+        <img src="../images/one-pucnh-man.jpg" alt="Токийский Гуль" class="anime-image">
+      </a>
+      <div class="anime-content">
+        <a href="pleer3.html">
+          <h3 class="anime-title">Ван пачмен</h3>
+        </a>
+        <p class="anime-genre">Супергерои • Боевик • Комедия</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .card-section-home {
+  display: flex;
+  gap: 20px; /* расстояние между карточками */
+  justify-content: center; /* выравнивание по центру */
+  flex-wrap: wrap; /* чтобы карточки переходили на новую строку при нехватке места */
+  padding: 40px;
+}
+
+.card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.watch-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.watch-button:hover {
+  background-color: #000000cd;
+}
+
+</style>
+
+
+
+
+
+
+
+
+</html>

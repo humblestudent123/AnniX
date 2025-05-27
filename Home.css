@@ -1,0 +1,155 @@
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      height: 20px;
+ 
+  margin-bottom: 60px; /* отступ 20 пикселей сверху */
+}
+
+
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+
+
+/* search */
+.search-container {
+  size: 100px;
+}
+.search-container #searchInput {
+  border-radius: 0px;
+  size: 100px;
+  
+}
+/* 
+.search-container #toggleSearch {
+  
+} */
+
+
+
+
+
+
+
+
+  /* card-section */
+
+.watch-button{
+  color: white;
+  text-decoration: none;
+}
+.card{
+  background-color: black;
+}
+
+.card-section-home{
+  background-color: #343434;
+}
+
+
+
+
+
+/* anime-card */
+body{
+    .anime-card {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.10s ease, box-shadow 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.anime-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.anime-card a {
+  text-decoration: none;       /* убираем подчёркивание */
+  color: inherit;              /* цвет текста наследуется от родителя (чёрный) */
+}
+
+.anime-card a:hover {
+  color: #000;                 /* при наведении — остаётся чёрным */
+}
+
+.anime-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.anime-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.anime-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+.anime-genre {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

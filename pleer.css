@@ -1,0 +1,139 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('../images/Klinok2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+/* Шапка */
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  height: 20px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Заголовок с логотипом */
+.title-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-with-logo img {
+  height: 50px;
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+}
+
+.player-head-back {
+  background-color: black;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 25px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+/* Плеер */
+.player {
+  background-color: black;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  height: 370px;
+}
+
+/* Кнопки управления */
+.remote-buttons {
+  padding: 30px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remote-back,
+.all-series,
+.remote-next,
+.btn,
+.btn1,
+.series {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remote-back:hover,
+.all-series:hover,
+.remote-next:hover,
+.btn:hover,
+.btn1:hover,
+.series:hover {
+  background-color: rgb(64, 64, 66);
+}
+
+/* Кнопки сбоку (если нужны) */
+.btn {
+  position: relative;
+  left: 200px;
+  top: -400px;
+}
+
+.btn1 {
+  position: relative;
+  left: -200px;
+  top: -300px;
+}
+
+/* Сетка серий */
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
+
+.series {
+  position: static;
+  text-align: center;
+}
