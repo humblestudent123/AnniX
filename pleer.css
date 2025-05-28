@@ -73,8 +73,7 @@ nav a:hover {
 
 /* Кнопки управления */
 .remote-buttons {
-  padding: 60px 20px;
-  background-color: black;
+  padding: 50px 20px;
   color: white;
   text-decoration: none;
   border-radius: 5px;
