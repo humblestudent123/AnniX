@@ -45,15 +45,7 @@
     <source src="/video/" type="video/mp4" size="720">
   </video>
 </div>
-<!-- JS инициализация -->
-<script>
-  const player = new Plyr('#player', {
-    quality: {
-      default: 720,
-      options: [720, 480,],
-    },
-  });
-</script>
+
 
 <!-- <style>
  .video-container {
@@ -80,7 +72,15 @@
 
 
 
-
+<!-- JS инициализация -->
+<script>
+  const player = new Plyr('#player', {
+    quality: {
+      default: 720,
+      options: [720, 480,],
+    },
+  });
+</script>
     
 
     <!-- Кнопки под плеером -->
