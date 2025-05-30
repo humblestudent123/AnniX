@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>AniX</title> 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../pleer-demon-slayer.css">
 
   <!-- голова -->
 <header>
@@ -155,7 +155,7 @@
   <div class="player-head-back">
     <div class="title-with-logo">
       <a href="/WatchAnime/DemonSlayer/1-allSeries.html"><img src="/images/tanjiro-ico.png" alt="Logo"></a>
-      <h1>Клинок рассекающих демонов 1 сезон 4 серия</h1>
+      <h1>Клинок рассекающих демонов 1 сезон 6 серия</h1>
     </div>
   </div>
 </div>
@@ -191,22 +191,26 @@
 
 
 
+  <!-- Плеер -->
+  <div class="player">
+    <!-- Подключи CSS и JS Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
-<!-- Player -->
-<div class="player">
-<iframe src="https://kinescope.io/embed/qfZELpPthkSbZGBrnALoDA" 
-  allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" 
-  frameborder="0" 
-  allowfullscreen width="500" 
-  height="290">
-</iframe>
+<!-- HTML -->
+<div class="video-container">
+  <video id="player" controls crossorigin playsinline>
+    <source src="/video/demon-slayer-2.mp4" type="video/mp4" size="720">
+  </video>
+</div>
+
 
 
 
 <div class="remote-buttons">
-  <a href="../DemonSlayer/3s.html" class="remote-back">Назад</a>
-  <a href="../DemonSlayer/1-allSeries.html" class="all-series">Все серии</a>
-  <a href="../DemonSlayer/5s.html" class="remote-next">5 серия</a>
+  <a href="5s.html" class="remote-back">Назад</a>
+  <a href="../allSeries.html" class="all-series">Все серии</a>
+  <a href="7s.html" class="remote-next">7 серия</a>
 </div>
 
   <style>

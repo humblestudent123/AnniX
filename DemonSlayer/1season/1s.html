@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AniX</title>
+  <link rel="stylesheet" href="../pleer-demon-slayer.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header>
+    <div class="logo">
+      <a href="/WatchAnime/DemonSlayer/1-allSeries.html">
+        <img src="/images/AniX-logo.png" alt="AniX" style="height: 50px;">
+      </a>
+    </div>
+    <nav>
+      <a href="../Home.html">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Заголовок -->
+  <div class="player-head">
+    <div class="player-head-back">
+      <div class="title-with-logo">
+        <a href="../DemonSlayer/1-allSeries.html">
+          <img src="/images/tanjiro-ico.png" alt="Logo">
+        </a>
+        <h1>Клинок рассекающих демонов 1 сезон 1 серия</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Плеер -->
+  <div class="player">
+    <!-- Подключи CSS и JS Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+<!-- HTML -->
+<div class="video-container">
+  <video id="player" controls crossorigin playsinline>
+    <source src="/video/demon-slayer-2.mp4" type="video/mp4" size="720">
+  </video>
+</div>
+
+
+<!-- <style>
+ .video-container {
+  max-width: 200px;
+  /* margin: 0 auto; */
+  margin: 100px;
+  
+  /* padding: 0 20px; */
+  padding: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#player {
+  width: 100%;
+  height: 100px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+}
+
+</style> -->
+
+
+
+
+<!-- JS инициализация -->
+<script>
+  const player = new Plyr('#player', {
+    quality: {
+      default: 720,
+      options: [720, 480,],
+    },
+  });
+</script>
+    
+
+    <!-- Кнопки под плеером -->
+    <div class="remote-buttons">
+      <a href="/WatchAnime/Home.html" class="remote-back">Назад</a>
+      <a href="../allSeries.html" class="all-series">Все серии</a>
+      <a href="2s.html" class="remote-next">2 серия</a>
+    </div>
+  </div>
+</body>
+</html>

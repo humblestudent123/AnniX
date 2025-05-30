@@ -3,16 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>AniX</title> 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../pleer-demon-slayer.css">
 
-
-
-
-  
   <!-- голова -->
 <header>
   <div class="logo">
-      <a href="/WatchAnime/Home.html">
+      <a href="../Home.html">
       <img src="/images/AniX-logo.png" alt="AniX" style="height: 50px;">
     </a>
   </div>
@@ -159,7 +155,7 @@
   <div class="player-head-back">
     <div class="title-with-logo">
       <a href="/WatchAnime/DemonSlayer/1-allSeries.html"><img src="/images/tanjiro-ico.png" alt="Logo"></a>
-      <h1>Клинок рассекающих демонов 1 сезон 1 серия</h1>
+      <h1>Клинок рассекающих демонов 1 сезон 5 серия</h1>
     </div>
   </div>
 </div>
@@ -196,23 +192,25 @@
 
 
 
-<!-- Player -->
-<div class="player">
-<!-- <iframe src="" 
-  allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" 
-  frameborder="0" 
-  allowfullscreen width="500" 
-  height="290">
-</iframe> -->
+  <!-- Плеер -->
+  <div class="player">
+    <!-- Подключи CSS и JS Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
-
+<!-- HTML -->
+<div class="video-container">
+  <video id="player" controls crossorigin playsinline>
+    <source src="/video/demon-slayer-2.mp4" type="video/mp4" size="720">
+  </video>
+</div>
 
 
 
 <div class="remote-buttons">
-  <a href="../Home.html" class="remote-back">Назад</a>
-  <a href="../DemonSlayer/1-allSeries.html" class="all-series">Все серии</a>
-  <a href="/WatchAnime/DemonSlayer/2s.html" class="remote-next">2 серия</a>
+  <a href="4s.html" class="remote-back">Назад</a>
+  <a href="../allSeries.html" class="all-series">Все серии</a>
+  <a href="6s.html" class="remote-next">6 серия</a>
 </div>
 
   <style>
@@ -386,14 +384,6 @@
     background-color: rgb(64, 64, 66);
   }
 </style>
-</div>
-
-
-
-
-
-
-  
 </div>
 
 

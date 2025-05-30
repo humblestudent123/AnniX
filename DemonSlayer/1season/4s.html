@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>AniX</title> 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../pleer-demon-slayer.css">
 
   <!-- голова -->
 <header>
@@ -155,7 +155,7 @@
   <div class="player-head-back">
     <div class="title-with-logo">
       <a href="/WatchAnime/DemonSlayer/1-allSeries.html"><img src="/images/tanjiro-ico.png" alt="Logo"></a>
-      <h1>Клинок рассекающих демонов 1 сезон 3 серия</h1>
+      <h1>Клинок рассекающих демонов 1 сезон 4 серия</h1>
     </div>
   </div>
 </div>
@@ -192,21 +192,34 @@
 
 
 
-<!-- Player -->
-<div class="player">
-<iframe src="https://kinescope.io/embed/7cv69mYGQ7p8vhbps7g2Ze" 
-  allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" 
-  frameborder="0" 
-  allowfullscreen width="500" 
-  height="290">
-</iframe>
+  <!-- Плеер -->
+  <div class="player">
+    <!-- Подключи CSS и JS Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+<!-- HTML -->
+<div class="video-container">
+  <video id="player" controls crossorigin playsinline>
+    <source src="/video/" type="video/mp4" size="720">
+  </video>
+</div>
+<!-- JS инициализация -->
+<script>
+  const player = new Plyr('#player', {
+    quality: {
+      default: 720,
+      options: [720, 480,],
+    },
+  });
+</script>
 
 
 
 <div class="remote-buttons">
-  <a href="../DemonSlayer/2s.html" class="remote-back">Назад</a>
-  <a href="../DemonSlayer/1-allSeries.html" class="all-series">Все серии</a>
-  <a href="../DemonSlayer/4s.html" class="remote-next">4 серия</a>
+  <a href="3s.html" class="remote-back">3 серия</a>
+  <a href="../allSeries.html" class="all-series">Все серии</a>
+  <a href="5s.html" class="remote-next">5 серия</a>
 </div>
 
   <style>
