@@ -8,7 +8,7 @@
   <!-- голова -->
 <header>
   <div class="logo">
-      <a href="../Home.html">
+      <a href="/WatchAnime/Home.html">
       <img src="/images/AniX-logo.png" alt="AniX" style="height: 50px;">
     </a>
   </div>
@@ -154,7 +154,7 @@
 <div class="player-head">
   <div class="player-head-back">
     <div class="title-with-logo">
-      <a href="/WatchAnime/DemonSlayer/1-allSeries.html"><img src="/images/tanjiro-ico.png" alt="Logo"></a>
+      <a href="/WatchAnime/DemonSlayer/allSeries.html"><img src="/images/tanjiro-ico.png" alt="Logo"></a>
       <h1>Клинок рассекающих демонов 1 сезон 18 серия</h1>
     </div>
   </div>
@@ -192,14 +192,29 @@
 
 
 
-<!-- Player -->
-<div class="player">
-<iframe src="" 
-  allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" 
-  frameborder="0" 
-  allowfullscreen width="500" 
-  height="290">
-</iframe>
+
+  <!-- Плеер -->
+  <div class="player">
+    <!-- Подключи CSS и JS Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+<!-- HTML -->
+<div class="video-container">
+  <video id="player" controls crossorigin playsinline>
+    <source src="/video/" type="video/mp4" size="720">
+  </video>
+</div>
+<!-- JS инициализация -->
+<script>
+  const player = new Plyr('#player', {
+    quality: {
+      default: 720,
+      options: [720, 480,],
+    },
+  });
+</script>
+
 
 
 
